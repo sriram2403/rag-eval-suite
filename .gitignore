@@ -1,0 +1,46 @@
+# Environment & secrets
+.env
+.env.*
+*.env
+
+# Python
+venv/
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Node / React
+dashboard/node_modules/
+dashboard/dist/
+
+# Uploaded user documents (runtime data)
+uploaded_files/
+
+# Generated reports
+reports/*.json
+reports/*.html
+
+# macOS
+.DS_Store
+.AppleDouble
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Claude internal
+.claude/
+.sixth/
+
+# Archives
+*.zip
+*.tar.gz
+
+# Sentence-transformer cache (large model weights)
+.cache/
