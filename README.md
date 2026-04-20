@@ -25,11 +25,11 @@ rag_eval/
 │
 ├── metrics/
 │   ├── __init__.py          # Metrics registry + build_metrics() factory
-│   ├── faithfulness.py      # Fact accuracy (anti-hallucination)
-│   ├── answer_relevance.py  # Answers the question (reverse question generation)
-│   ├── context_metrics.py   # Info coverage + source quality
-│   ├── groundedness.py      # Stays in document (LLM-as-judge)
-│   └── similarity_metrics.py # Meaning match + word overlap
+│   ├── fact_accuracy.py      # Fact accuracy (anti-hallucination)
+│   ├── answer_quality.py     # Answers the question (reverse question generation)
+│   ├── context_coverage.py   # Info coverage + source quality
+│   ├── document_grounding.py # Stays in document (LLM-as-judge)
+│   └── semantic_similarity.py # Meaning match + word overlap
 │
 ├── pipelines/
 │   ├── rag_pipelines.py     # Naive (TF-IDF), Semantic (embeddings), Mock
