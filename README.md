@@ -59,11 +59,11 @@ rag_eval/
 
 | Metric | Display Name | Description | LLM Required |
 | ------ | ------------ | ----------- | ------------ |
-| `faithfulness` | **Fact Accuracy** | Fraction of answer claims supported by retrieved context | Optional |
-| `answer_relevance` | **Answers the Question** | Does the answer address what was actually asked? | Optional |
+| `fact_accuracy` | **Fact Accuracy** | Fraction of answer claims supported by retrieved context | Optional |
+| `answer_quality` | **Answers the Question** | Does the answer address what was actually asked? | Optional |
 | `context_recall` | **Info Coverage** | How much of the ground truth appears in retrieved context? | Optional |
 | `context_precision` | **Source Quality** | What fraction of retrieved chunks are truly relevant? | Optional |
-| `groundedness` | **Stays in Document** | Holistic LLM-judge check that answer doesn't go beyond context | Optional |
+| `document_grounding` | **Stays in Document** | Holistic LLM-judge check that answer doesn't go beyond context | Optional |
 | `semantic_similarity` | **Meaning Match** | Cosine similarity between answer and ground truth embeddings | No |
 | `rouge_l` | **Word Overlap** | Longest common subsequence F1 vs ground truth | No |
 
