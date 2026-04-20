@@ -4,11 +4,11 @@ Metrics Registry — central factory for all evaluation metrics.
 from typing import List
 from core.models import MetricName, BenchmarkConfig
 from core.base_metric import BaseMetric
-from metrics.faithfulness import FaithfulnessMetric
-from metrics.answer_relevance import AnswerRelevanceMetric
-from metrics.context_metrics import ContextRecallMetric, ContextPrecisionMetric
-from metrics.groundedness import GroundednessMetric
-from metrics.similarity_metrics import SemanticSimilarityMetric, ROUGELMetric
+from metrics.fact_accuracy import FaithfulnessMetric
+from metrics.answer_quality import AnswerRelevanceMetric
+from metrics.context_coverage import ContextRecallMetric, ContextPrecisionMetric
+from metrics.document_grounding import GroundednessMetric
+from metrics.semantic_similarity import SemanticSimilarityMetric, ROUGELMetric
 
 
 METRIC_DESCRIPTIONS = {

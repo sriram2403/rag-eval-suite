@@ -24,7 +24,7 @@ def test_models():
 def test_rouge_metric():
     print("  Testing ROUGE-L metric (no API)...")
     from core.models import RAGSample
-    from metrics.similarity_metrics import ROUGELMetric
+    from metrics.semantic_similarity import ROUGELMetric
 
     metric = ROUGELMetric(threshold=0.3)
     sample = RAGSample(
@@ -41,7 +41,7 @@ def test_rouge_metric():
 def test_semantic_similarity():
     print("  Testing Semantic Similarity metric...")
     from core.models import RAGSample
-    from metrics.similarity_metrics import SemanticSimilarityMetric
+    from metrics.semantic_similarity import SemanticSimilarityMetric
 
     try:
         metric = SemanticSimilarityMetric(threshold=0.75)
